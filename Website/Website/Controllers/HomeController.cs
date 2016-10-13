@@ -14,22 +14,12 @@ namespace Website.Controllers
             return View();
         }
 
-        public ActionResult Steven()
+        public ActionResult About()
         {
             return View();
         }
 
-        public ActionResult Felix()
-        {
-            return View();
-        }
-
-        public ActionResult Alex()
-        {
-            return View();
-        }
-
-        public ActionResult Aleksei()
+        public ActionResult Contact()
         {
             return View();
         }
