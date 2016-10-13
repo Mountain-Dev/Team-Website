@@ -17,7 +17,7 @@ namespace Website.Controllers
             personalDatas = new List<personData>();
             personalDatas.Add(new personData() { title = "Felix", text = "Test Text Felix" });
             personalDatas.Add(new personData() { title = "Steven", text = "Test Text Steven" });
-            personalDatas.Add(new personData() { title = "Alex", text = "Test Alex" });
+            personalDatas.Add(new personData() { title = "Alex", text = "Test Text Alex" });
             personalDatas.Add(new personData() { title = "Aleksei", text = "Test Text Aleksei" });
         }
 

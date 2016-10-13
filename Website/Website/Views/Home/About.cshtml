@@ -1,4 +1,4 @@
-﻿@model System.Collections.Generic.List<Website.Models.personData>
+﻿@model List<Website.Models.personData>
 @{
     int collapseID = 1;
 }
@@ -23,14 +23,14 @@
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="@collapseStringHash">
-                        @item.title;
+                        @item.title
                     </a>
                 </h4>
             </div>
 
             <div id="@collapseString" class="panel-collapse collapse">
                 <div class="panel-body">
-                       @item.text;
+                       @item.text
                 </div>
             </div>
         </div>
