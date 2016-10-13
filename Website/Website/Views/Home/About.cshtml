@@ -1,7 +1,43 @@
-﻿
+﻿@model List<Website.Models.personData>
 @{
-    ViewBag.Title = "About";
+    int collapseID = 1;
 }
+
+
 
 <h2>About</h2>
 
+
+
+<div class="panel-group" id="accordion">
+
+
+    @foreach (var item in Model)
+            {
+                string collapseStringHash = "#collapse" + collapseID.ToString();
+                string collapseString = "collapse" + collapseID.ToString();
+                collapseID++;
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="@collapseStringHash">
+                        @item.title
+                    </a>
+                </h4>
+            </div>
+
+            <div id="@collapseString" class="panel-collapse collapse">
+                <div class="panel-body">
+                       @item.text
+                </div>
+            </div>
+        </div>
+    }
+
+    <script>
+        document.co
+    </script>
+
+</div>
