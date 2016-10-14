@@ -15,14 +15,12 @@ namespace Website.Controllers
         public HomeController()
         {
             personalDatas = new List<personData>();
-            personalDatas.Add(new personData() { title = "Felix", text = "Test Text Felix" });
-            personalDatas.Add(new personData() { title = "Steven", text = "Test Text Steven" });
-            personalDatas.Add(new personData() { title = "Alex", text = "Test Text Alex" });
-            personalDatas.Add(new personData() { title = "Aleksei", text = "Test Text Aleksei" });
+            personalDatas.Add(new personData() { title = "Felix Wetell", phone = 30100000, mail = "felix.wetell@gmail.com", text = "I´m just a random guy that writes shit code!" });
+            personalDatas.Add(new personData() { title = "Steven Bergqvist", phone = 010101, mail = "stevenbergqvist@gmail.com", text = "Steven is a good guy." });
+            personalDatas.Add(new personData() { title = "Alex Söderberg", phone = 987654321, mail = "h1h2@hotmail.com", text = "Alex is a cooool guy." });
+            personalDatas.Add(new personData() { title = "Aleksei Kazakov", phone = 123456789, mail = "cossack-hd@gmail.com", text = "Aleksei is a Russian elite hacker." });
         }
-
-
-
+        
         // GET: Home
         public ActionResult Index()
         {

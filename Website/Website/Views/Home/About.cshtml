@@ -3,21 +3,19 @@
     int collapseID = 1;
 }
 
-
+@section stylesheets {
+    <link href="~/css/index.css" rel="stylesheet" />
+}
 
 <h2>About</h2>
 
-
-
 <div class="panel-group" id="accordion">
-
 
     @foreach (var item in Model)
             {
                 string collapseStringHash = "#collapse" + collapseID.ToString();
                 string collapseString = "collapse" + collapseID.ToString();
                 collapseID++;
-
 
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -30,6 +28,18 @@
 
             <div id="@collapseString" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Mail:</td>
+                                <td>@item.mail</td>
+                            </tr>
+                            <tr>
+                                <td>Phone:</td>
+                                <td>@item.phone</td>
+                            </tr>
+                        </tbody>
+                    </table>
                        @item.text
                 </div>
             </div>
